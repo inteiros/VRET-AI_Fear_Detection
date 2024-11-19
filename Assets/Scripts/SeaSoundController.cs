@@ -18,6 +18,7 @@ public class SeaSoundController : MonoBehaviour
     void Start()
     {
         audioPlayer = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioPlayer>();
+        audioPlayer.StopSFX();
         audioPlayer.PlaySea();
         isUnderwater = false;
     }

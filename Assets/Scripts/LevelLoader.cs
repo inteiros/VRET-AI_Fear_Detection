@@ -26,6 +26,17 @@ public class LevelLoader : MonoBehaviour
 
     [Header("Audio Player")]
     private AudioPlayer audioPlayer;
+    void Awake()
+    {
+        LevelLoader[] instances = FindObjectsByType<LevelLoader>(FindObjectsSortMode.None);
+        if (instances.Length > 1)
+        {
+            Destroy(this.gameObject);
+            return;
+        }
+
+        DontDestroyOnLoad(this.gameObject);
+    }
 
     void Start()
     {
@@ -118,7 +129,7 @@ public class LevelLoader : MonoBehaviour
 
             // Obter a predicao (0 = chill, 1 = fear)
             float prediction = outputTensor[0];
-            fearDetected = prediction > 0.8f;
+            fearDetected = prediction > 0.55f;
             calmState = prediction < 0.3f;
 
             Debug.Log($"Fear level: {prediction}");
@@ -182,13 +193,26 @@ public class LevelLoader : MonoBehaviour
         LoadNextScene();
     }
 
+    private bool isCheckingCalmState = false;
+
+    void Update()
+    {
+        if (SceneManager.GetActiveScene().buildIndex == 4 && !isCheckingCalmState)
+        {
+            PlayChillMusic();
+            StartCoroutine(CheckCalmState()); 
+            isCheckingCalmState = true;
+        }
+    }
+
+
     private void LoadNextScene()
     {
         int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
         if (nextSceneIndex > 3) nextSceneIndex = 0;
         StartCoroutine(LoadLevel(nextSceneIndex));
     }
-
+     
     private void LoadScene(int sceneIndex)
     {
         StartCoroutine(LoadLevel(sceneIndex));
@@ -199,6 +223,7 @@ public class LevelLoader : MonoBehaviour
         transition.SetTrigger("Start");
         yield return new WaitForSeconds(transitionTime);
         SceneManager.LoadScene(sceneIndex);
+        transition.SetTrigger("Reset");
     }
 
 }
