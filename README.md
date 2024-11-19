@@ -10,7 +10,7 @@ This project is a Thalassophobia **Virtual Reality Exposure Therapy (VRET)** app
 
 The datasets used to train the fear detection model were collected during multiple sessions with the **NeuroSky Mindwave**. The sessions included periods where the participant was exposed to fear-inducing stimuli, followed by relaxation phases.
 
-Below is the EEG data visualization from one of these sessions. The first half of the graph shows brainwave activity during fear, while the second half represents relaxation:
+Below is the EEG data visualization from one of these sessions. The first half of the graph shows brainwave activity during relaxation, while the second half represents fear:
 
 ![Mindwave Analysis](MindwaveAI/plots/mindwave_analysis.png)
 
