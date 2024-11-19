@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: a6d566536cc718c4db1c13c925ab3798
+timeCreated: 1522083338
+licenseType: Store
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 70472
+  packageName: Colonial Ship
+  packageVersion: 1.0
+  assetPath: Assets/Nokobot/ColonialShip/01_Scenes/DisplayScene.unity
+  uploadId: 237892

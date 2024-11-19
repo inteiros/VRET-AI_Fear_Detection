@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 8f44c0d3686bfa141821b8f91252523e
+timeCreated: 1522089776
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 70472
+  packageName: Colonial Ship
+  packageVersion: 1.0
+  assetPath: Assets/Nokobot/ColonialShip/02_Prefabs/Extra Items/Cannon.prefab
+  uploadId: 237892

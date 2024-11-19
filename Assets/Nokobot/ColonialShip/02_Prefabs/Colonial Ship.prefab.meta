@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: f855683b127eede4c9d170be2672ae27
+timeCreated: 1522089457
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 70472
+  packageName: Colonial Ship
+  packageVersion: 1.0
+  assetPath: Assets/Nokobot/ColonialShip/02_Prefabs/Colonial Ship.prefab
+  uploadId: 237892

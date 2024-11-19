@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 44cc67909bc6e7c4db2a2a11487b93f8
+timeCreated: 1468568533
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67293
+  packageName: Boats Pack
+  packageVersion: 1.0
+  assetPath: Assets/Boats/Materials/Boat_1_Mat.mat
+  uploadId: 127815

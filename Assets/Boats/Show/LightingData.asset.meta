@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 1aad533d4b0b77349b84272a0129bcf5
+timeCreated: 1468834638
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67293
+  packageName: Boats Pack
+  packageVersion: 1.0
+  assetPath: Assets/Boats/Show/LightingData.asset
+  uploadId: 127815

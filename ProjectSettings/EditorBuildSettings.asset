@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Ocean1.unity
+    guid: 26f6d4625d0a20a4da1129efe981d91a
+  - enabled: 1
+    path: Assets/Scenes/Ocean2.unity
+    guid: 002e06177e7f4184a92fed04ca8e28bc
+  - enabled: 1
+    path: Assets/Scenes/Ocean3.unity
+    guid: e50c1ecb949c8da4c803b42e703bc203
+  - enabled: 1
+    path: Assets/Scenes/Ocean4.unity
+    guid: 01b290c9eb1adc842855ee26ad11ac1d
+  - enabled: 1
+    path: Assets/Scenes/Calming.unity
+    guid: 92056dbbfe792c24aa0598c1bdb8ce65
+  m_configObjects:
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 35845fe01580c41289b024647b1d1c53, type: 3}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: cc680f1711aeeb8489a82b3c492b7709, type: 2}
+  m_UseUCBPForAssetBundles: 0

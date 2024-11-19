@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 9ca5b8fd2fa2eb347a3f7730cb9669ec
+timeCreated: 1522089692
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 70472
+  packageName: Colonial Ship
+  packageVersion: 1.0
+  assetPath: Assets/Nokobot/ColonialShip/02_Prefabs/Extra Items/Barrel_Simple.prefab
+  uploadId: 237892

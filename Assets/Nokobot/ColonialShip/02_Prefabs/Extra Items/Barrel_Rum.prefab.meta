@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 63e4878c4f0d22043a7384ef54ec78ff
+timeCreated: 1522089706
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 70472
+  packageName: Colonial Ship
+  packageVersion: 1.0
+  assetPath: Assets/Nokobot/ColonialShip/02_Prefabs/Extra Items/Barrel_Rum.prefab
+  uploadId: 237892

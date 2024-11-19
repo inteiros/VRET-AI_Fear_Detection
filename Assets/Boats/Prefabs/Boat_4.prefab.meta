@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: de8dda36a6e057047a0403748b816741
+timeCreated: 1468834551
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67293
+  packageName: Boats Pack
+  packageVersion: 1.0
+  assetPath: Assets/Boats/Prefabs/Boat_4.prefab
+  uploadId: 127815
