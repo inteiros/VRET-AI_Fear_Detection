@@ -1,4 +1,4 @@
-# EEG-VRET: Virtual Reality Exposure Therapy with Real-Time Fear Detection
+# EEG-VRET: Virtual Reality Exposure Therapy with Real-Time AI Fear Detection
 
 ## Overview
 
