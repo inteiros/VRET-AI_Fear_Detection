@@ -1,0 +1,5 @@
+*.cs linguist-weight=2
+
+*.shader linguist-weight=1
+*.hlsl linguist-weight=1
+*.py linguist-weight=1
