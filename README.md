@@ -8,7 +8,7 @@ This project is a Thalassophobia **Virtual Reality Exposure Therapy (VRET)** app
 
 ## Showcase
 
-[![Project Showcase](img/thumbnail.png)](https://youtu.be/ftw95f5osdE)
+[![Project Showcase](img/thumbnail.png)](https://youtu.be/KiFwPfOwLvI)
 
 ---
 
