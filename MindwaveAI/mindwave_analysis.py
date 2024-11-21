@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-file_path = "datasets\mindwave_session_chill.csv"
+file_path = "datasets\mindwave_session_video.csv"
 data = pd.read_csv(file_path)
 
 data['DeltaBetaRatio'] = data['Delta'] / data['LowBeta']
@@ -35,7 +35,7 @@ plt.legend()
 
 plt.tight_layout()
 
-output_path = "datasets\mindwave_session_chill_waves.png"
+output_path = "plots\mindwave_session_video_waves.png"
 plt.savefig(output_path)
 print(f"Gráfico salvo em: {output_path}")
 
@@ -51,7 +51,7 @@ plt.ylabel('Nível')
 plt.legend()
 
 plt.tight_layout()
-output_path_attention = "datasets\mindwave_session_chill.png"
+output_path_attention = "plots\mindwave_session_video.png"
 plt.savefig(output_path_attention)
 print(f"Gráfico de Meditação e Atenção salvo em: {output_path_attention}")
 

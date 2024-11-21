@@ -16,6 +16,9 @@ public class LevelLoader : MonoBehaviour
     private MindwaveDataModel mindwaveData;
     private bool fearDetected = false;
     private bool calmState = false;
+    public static bool IsMindwaveManagerInitialized = false;
+    private bool isAutoLoadRunning = false;
+
 
     [Header("ONNX Model")]
     [SerializeField] private NNModel onnxModel;
@@ -63,7 +66,7 @@ public class LevelLoader : MonoBehaviour
 
         audioPlayer = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioPlayer>();
 
-        if (SceneManager.GetActiveScene().buildIndex == 4)
+        if (SceneManager.GetActiveScene().buildIndex == 5)
         {
             PlayChillMusic();
             StartCoroutine(CheckCalmState());
@@ -129,8 +132,8 @@ public class LevelLoader : MonoBehaviour
 
             // Obter a predicao (0 = chill, 1 = fear)
             float prediction = outputTensor[0];
-            fearDetected = prediction > 0.55f;
-            calmState = prediction < 0.3f;
+            fearDetected = prediction > 0.5f;
+            calmState = prediction < 0.25f;
 
             Debug.Log($"Fear level: {prediction}");
             Debug.Log($"Fear Detected: {fearDetected}");
@@ -158,7 +161,8 @@ public class LevelLoader : MonoBehaviour
         {
             if (calmState) 
             {
-                LoadScene(0);
+                LoadScene(1);
+                StartCoroutine(AutoLoadNextScene());
                 yield break;
             }
 
@@ -182,7 +186,9 @@ public class LevelLoader : MonoBehaviour
         {
             if (fearDetected)
             {
-                LoadScene(4);
+                LoadScene(5);
+                isAutoLoadRunning = false;
+                isCheckingCalmState = false;
                 yield break;
             }
 
@@ -191,13 +197,20 @@ public class LevelLoader : MonoBehaviour
         }
 
         LoadNextScene();
+        isAutoLoadRunning = false;
     }
 
     private bool isCheckingCalmState = false;
 
     void Update()
     {
-        if (SceneManager.GetActiveScene().buildIndex == 4 && !isCheckingCalmState)
+        if (SceneManager.GetActiveScene().buildIndex != 5 && !isAutoLoadRunning)
+        {
+            StartCoroutine(AutoLoadNextScene()); 
+            isAutoLoadRunning = true; 
+        }
+
+        if (SceneManager.GetActiveScene().buildIndex == 5 && !isCheckingCalmState)
         {
             PlayChillMusic();
             StartCoroutine(CheckCalmState()); 
@@ -209,7 +222,7 @@ public class LevelLoader : MonoBehaviour
     private void LoadNextScene()
     {
         int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
-        if (nextSceneIndex > 3) nextSceneIndex = 0;
+        if (nextSceneIndex > 4) nextSceneIndex = 1;
         StartCoroutine(LoadLevel(nextSceneIndex));
     }
      

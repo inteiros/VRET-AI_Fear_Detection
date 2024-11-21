@@ -30,7 +30,7 @@ public class MonoSingleton<T> : MonoBehaviour
 				InitInstance(currentInstance);
 			}
 
-			OnAwakeMessage();
+            OnAwakeMessage();
 		}
 
 		private void OnDestroy()

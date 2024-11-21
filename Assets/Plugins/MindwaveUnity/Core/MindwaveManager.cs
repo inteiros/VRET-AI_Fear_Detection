@@ -11,10 +11,10 @@
 public class MindwaveManager : MuffinTools.MonoSingleton<MindwaveManager>
 {
 
-	#region Attributes
+    #region Attributes
 
-		private MindwaveController m_Controller = null;
-		private MindwaveCalibrator m_Calibrator = null;
+    private MindwaveController m_Controller = null;
+	private MindwaveCalibrator m_Calibrator = null;
 
 	#endregion
 
@@ -23,7 +23,7 @@ public class MindwaveManager : MuffinTools.MonoSingleton<MindwaveManager>
 
 		protected override void OnInstanceInit()
 		{
-			base.OnInstanceInit();
+            base.OnInstanceInit();
 
 			DontDestroyOnLoad(gameObject);
 
@@ -31,12 +31,12 @@ public class MindwaveManager : MuffinTools.MonoSingleton<MindwaveManager>
 			m_Calibrator = GetComponent<MindwaveCalibrator>();
 		}
 
-	#endregion
+    #endregion
 
-	
-	#region Accessors
 
-		public MindwaveController Controller
+    #region Accessors
+
+    public MindwaveController Controller
 		{
 			get { return m_Controller; }
 		}

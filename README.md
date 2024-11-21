@@ -6,6 +6,12 @@ This project is a Thalassophobia **Virtual Reality Exposure Therapy (VRET)** app
 
 ---
 
+## Showcase
+
+[![Project Showcase](img/thumbnail.png)](https://www.youtube.com/watch?v=n3riD3FERcs)
+
+---
+
 ## Data Collection and Preprocessing
 
 The datasets used to train the fear detection model were collected during multiple sessions with the **NeuroSky Mindwave**. The sessions included periods where the participant was exposed to fear-inducing stimuli, followed by relaxation phases.
